@@ -12,8 +12,9 @@ app.use(cors({
   origin: [
     'http://localhost:5173',
     'http://localhost:4173',
-    /\.vercel\.app$/,          // any Vercel preview/production URL
-    process.env.FRONTEND_URL,  // set this in Render env vars after deploying
+    /\.vercel\.app$/,
+    'https://uroms-backend.onrender.com',
+    process.env.FRONTEND_URL,
   ].filter(Boolean),
   credentials: true
 }))
